@@ -13,14 +13,15 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
   @override
   void dispose(){
     emailController.dispose();
     passwordController.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     Size screenSize = Utils().getScreenSize();
