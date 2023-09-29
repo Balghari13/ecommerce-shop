@@ -1,3 +1,4 @@
+import 'package:e_shop/Screens/registertion.dart';
 import 'package:e_shop/Utilis/color_theme.dart';
 import 'package:e_shop/Utilis/constants.dart';
 import 'package:e_shop/Utilis/utils.dart';
@@ -54,7 +55,8 @@ class _SignInScreenState extends State<SignInScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('Sign In', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),),
+                          const Text('Sign In',
+                            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),),
                           TextFieldWidget(title: 'Email',
                               controller: emailController,
                               obscureText: false, hintText: 'Enter your email', icon: Icons.email,
@@ -90,7 +92,10 @@ class _SignInScreenState extends State<SignInScreen> {
 
                       ],
                     ),
-                    CustomButton(onPressed: (){}, color: Colors.grey.shade500,
+                    CustomButton(onPressed: (){
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context)=>const RegistrationScreen()));
+                    }, color: Colors.grey.shade500,
                         isLoading: false, child: const Text('Create an Account',
                       style: TextStyle(color: Colors.black, letterSpacing: 0.6),))
 
