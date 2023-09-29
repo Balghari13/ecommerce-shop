@@ -1,10 +1,11 @@
-import 'package:e_shop/Utilis/color_theme.dart';
-import 'package:e_shop/Utilis/utils.dart';
-import 'package:e_shop/Widgets/cutom_button.dart';
-import 'package:e_shop/Widgets/text_field.dart';
+
 import 'package:flutter/material.dart';
 
+import '../Utilis/color_theme.dart';
 import '../Utilis/constants.dart';
+import '../Utilis/utils.dart';
+import '../Widgets/cutom_button.dart';
+import '../Widgets/text_field.dart';
 
 
 class RegistrationScreen extends StatefulWidget {
@@ -84,9 +85,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                   , icon: Icons.lock),
                               Align(
                                 alignment: Alignment.center,
-                                child: CustomButton(child: const Text('Sign Up',
-                                  style: TextStyle(color: Colors.black,letterSpacing: 0.6),),
-                                    onPressed: (){}, color: yellowColor, isLoading: false),
+                                child: CustomButton(onPressed: (){}, color: yellowColor, isLoading: false, child: const Text('Sign Up',
+                                  style: TextStyle(color: Colors.black,letterSpacing: 0.6),)),
                               ),
                             ],
                           ),
@@ -94,11 +94,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       ),
                     ),
 
-                    CustomButton(child: const Text('Back',
-                      style: TextStyle(color: Colors.black,letterSpacing: 0.6),),
-                        onPressed: (){
+                    CustomButton(onPressed: (){
                       Navigator.pop(context);
-                        }, color: Colors.grey, isLoading: false)
+                        }, color: Colors.grey, isLoading: false, child: const Text('Back',
+                      style: TextStyle(color: Colors.black,letterSpacing: 0.6),))
 
                   ],
                 ),

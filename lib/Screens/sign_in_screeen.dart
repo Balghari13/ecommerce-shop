@@ -1,10 +1,12 @@
-import 'package:e_shop/Screens/registertion.dart';
-import 'package:e_shop/Utilis/color_theme.dart';
-import 'package:e_shop/Utilis/constants.dart';
-import 'package:e_shop/Utilis/utils.dart';
-import 'package:e_shop/Widgets/cutom_button.dart';
-import 'package:e_shop/Widgets/text_field.dart';
+
+import 'package:eccommerce_shop/Screens/registertion.dart';
 import 'package:flutter/material.dart';
+
+import '../Utilis/color_theme.dart';
+import '../Utilis/constants.dart';
+import '../Utilis/utils.dart';
+import '../Widgets/cutom_button.dart';
+import '../Widgets/text_field.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});

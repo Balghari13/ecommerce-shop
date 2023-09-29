@@ -1,5 +1,7 @@
-import 'package:e_shop/Utilis/utils.dart';
+
 import 'package:flutter/material.dart';
+
+import '../Utilis/utils.dart';
 
 class CustomButton extends StatelessWidget {
   final Widget child;
