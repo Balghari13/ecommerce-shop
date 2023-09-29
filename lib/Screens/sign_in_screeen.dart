@@ -24,7 +24,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = Utils().getScreenSize();
+    Size screenSize = Utils().getScreenSize(context);
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(

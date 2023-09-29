@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = Utils().getScreenSize();
+    Size screenSize = Utils().getScreenSize(context);
     return ElevatedButton(
         onPressed: onPressed,
       style: ElevatedButton.styleFrom(
